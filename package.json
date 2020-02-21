@@ -1,0 +1,9 @@
+{
+  "name": "common-frontend-tools",
+  "version": "1.0.0",
+  "description": "A repo for common tools assembly",
+  "main": "index.js",
+  "repository": "https://github.com/Zoro916/common-frontend-tools.git",
+  "author": "zoro_1943@icloud.com",
+  "license": "MIT"
+}
