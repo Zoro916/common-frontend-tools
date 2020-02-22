@@ -7,6 +7,7 @@
     "build:doc": "jsdoc -c jsdoc.json",
     "dev": "rollup -c -w",
     "test": "jest test",
+    "prebuild": "yarn test",
     "postinstall": "rollup -c"
   },
   "repository": "https://github.com/Zoro916/common-frontend-tools.git",
@@ -30,5 +31,8 @@
   },
   "peerDependencies": {
     "lodash": "*"
+  },
+  "dependencies": {
+    "jest-html-reporter": "^2.8.0"
   }
 }

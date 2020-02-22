@@ -16,20 +16,20 @@ export default [
     ],
     plugins: [
       resolve({ jail: `${__dirname}/src` }),
-      // eslint(),
+      eslint(),
       babel({
         include: [`${toolsPath}/${filepath}/*.js`],
       }),
     ],
   })),
   {
-    input: 'src/index.js',
+    input: 'src/entry.js',
     output: [
       { file: `index.js`, format: 'es' },
     ],
     plugins: [
       resolve({ jail: `${__dirname}/src` }),
-      // eslint(),
+      eslint(),
       babel({
         include: ['src/**/*.js', 'src/*.js'],
       }),
