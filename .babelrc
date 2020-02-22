@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env"
+    ]
+  ],
+  "plugins": [
+    "lodash",
+    [
+      "@babel/plugin-proposal-object-rest-spread",
+      {
+        "useBuiltIns": true
+      }
+    ]
+  ]
+}
