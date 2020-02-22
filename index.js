@@ -61,6 +61,17 @@ var customMutiParams = function customMutiParams(value) {
     return Array.isArray(value[k]) && value[k].length > 0 ? "".concat(k, ":").concat(value[k].join(',')) : "".concat(k, ":").concat(value[k]);
   }).join('!');
 };
+/**
+ * @name get请求参数转换工具函数
+ * @function
+ * @description 将传入的对象（key-value）结构，转换为querystring（查询字符串），并自动剔除nudefined、null和空字符
+ * @param {Object} params key-value结构的参数对象
+ * @returns querystring 查询字符串
+ * 
+ * @example
+ * encodeUrlParams({ a: 1, b: undefined, c: null, d: '', e: 'a' })  // => a=1&e=a
+ */
+
 
 function encodeUrlParams(params) {
   return Object.keys(params).filter(function (prop) {
