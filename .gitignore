@@ -2,4 +2,5 @@ lib
 node_modules
 coverage
 docs
+yarn.lock
 .DS_Store
